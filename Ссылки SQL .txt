@@ -1,0 +1,19 @@
+Ссылки на скачивание ПО
+• MySQL Community Server: https://dev.mysql.com/downloads/mysql/
+• Workbench: https://dev.mysql.com/downloads/workbench/
+• DBeaver: https://dbeaver.io/download/
+
+Инструкция по установке MySQL: https://info-comp.ru/install-mysql-on-windows-10
+
+Пример руководства по стилю SQL:
+https://www.sqlstyle.guide/ru/
+
+Инструкция по установке MySQL на windows-10
+https://info-comp.ru/install-mysql-on-windows-10
+
+
+Литература по СУБД:
+• Линн Бейли «Изучаем SQL»
+• Крис Дж. Дейт «Введение в системы баз данных»
+• Алан Бьюли «Изучаем SQL»
+• Энтони Молинаро «SQL. Сборник рецептов»
