@@ -3,8 +3,8 @@
 -- Подсчитать общее количество лайков, которые получили пользователи младше 12 лет.
 
 USE lesson_4;
-SELECT 	user_id, COUNT(media_id) AS 'Кол-во лайков'
-FROM likes 
+SELECT 	user_id, COUNT(user_id) AS 'Кол-во лайков'
+FROM media 
 	WHERE user_id IN 
 		(SELECT user_id FROM profiles WHERE TIMESTAMPDIFF (YEAR , birthday, CURDATE()) > 12)
 		GROUP BY user_id
@@ -19,11 +19,11 @@ FROM likes
 		
 USE lesson_4;
 SELECT 
-	COUNT(m.user_id) AS 'Кол-во лайков', 
+	COUNT(l.user_id) AS 'Кол-во лайков', 
 	p.gender 
-FROM media m 
+FROM likes l 
 
-JOIN profiles p  ON m.user_id = p.user_id
+JOIN profiles p  ON l.user_id = p.user_id
 GROUP BY p.gender
 
 
