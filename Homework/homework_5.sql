@@ -18,7 +18,7 @@ USE lesson_4;
 CREATE OR REPLACE VIEW view_users AS
 SELECT u.id, CONCAT(u.firstname, ' ',  u.lastname) AS name,  p.hometown, p.gender  FROM users u
 JOIN profiles p ON u.id=p.user_id
-WHERE TIMESTAMPDIFF(YEAR, p.birthday, CURDATE()) < 20
+WHERE TIMESTAMPDIFF(YEAR, p.birthday, CURDATE()) <= 20
 
 -- Выводим представление view_users
 SELECT name, gender FROM view_users;
